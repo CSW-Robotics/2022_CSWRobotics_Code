@@ -29,7 +29,7 @@ public class RobotContainer {
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   private final Sub_MotorSpinExample m_Sub_MotorSpinExample = new Sub_MotorSpinExample();
   
-  //Creates Commdand
+  //Creates Command
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
   private final Cmd_MotoSpinExample m_Cmd_MotoSpinExample = new Cmd_MotoSpinExample(m_Sub_MotorSpinExample);
 
