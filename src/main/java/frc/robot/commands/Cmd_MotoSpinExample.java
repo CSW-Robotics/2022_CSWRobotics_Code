@@ -12,8 +12,10 @@ import edu.wpi.first.wpilibj2.command.Subsystem;
 public class Cmd_MotoSpinExample extends CommandBase {
    /** Creates a new Cmd_MotoSpinExample. */
   
+   //Sets Sub_MotorSpinExample to be called m_MotorExample
   private final Sub_MotorSpinExample m_MotorExample;
 
+  //sets paramaters that Cmd_MotorSpinExample needs to Sub_MotorSpinExample
   public Cmd_MotoSpinExample(Sub_MotorSpinExample Subsystem){
     m_MotorExample = Subsystem;
     // Use addRequirements() here to declare subsystem dependencies.
@@ -25,6 +27,7 @@ public class Cmd_MotoSpinExample extends CommandBase {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
+    //Runs the start code from Sub_MotorSpinExample
     m_MotorExample.start();
   }
 
@@ -35,6 +38,7 @@ public class Cmd_MotoSpinExample extends CommandBase {
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
+    //Runs the stop code from Sub_MotorSpinExample
     m_MotorExample.stop();
   }
 
