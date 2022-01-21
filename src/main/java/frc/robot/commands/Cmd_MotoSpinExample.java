@@ -24,14 +24,14 @@ public class Cmd_MotoSpinExample extends CommandBase {
   
     
 
-  // Called when the command is initially scheduled.
+  // Initialize is called when the command is initially scheduled.
   @Override
   public void initialize() {
     //Runs the start code from Sub_MotorSpinExample
     m_MotorExample.start();
   }
 
-  // Called every time the scheduler runs while the command is scheduled.
+  // Execute is called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {}
 
