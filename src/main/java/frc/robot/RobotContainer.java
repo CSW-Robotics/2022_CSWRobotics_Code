@@ -21,11 +21,15 @@ import frc.robot.subsystems.Sub_MotorSpinExample;
  */
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
+
+  //Creates Controller
   private final XboxController m_controller = new XboxController(Constants.ctrlPort);
 
+  //Creates Subsystem
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   private final Sub_MotorSpinExample m_Sub_MotorSpinExample = new Sub_MotorSpinExample();
   
+  //Creates Commdand
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
   private final Cmd_MotoSpinExample m_Cmd_MotoSpinExample = new Cmd_MotoSpinExample(m_Sub_MotorSpinExample);
 
